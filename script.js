@@ -1,1 +1,7 @@
-console.log("Добро пожаловать на сайт 'ДОБРОЕ СЕРДЦЕ'");
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert(`Скопировано: ${text}`);
+    }).catch(err => {
+        alert('Ошибка при копировании: ' + err);
+    });
+}
