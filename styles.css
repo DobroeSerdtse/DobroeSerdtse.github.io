@@ -61,28 +61,70 @@ section {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in;
 }
 
-.gallery {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
+.leader {
+    text-align: center;
+    /* Центрирует содержимое блока */
+    margin-top: 2rem;
 }
 
-.gallery img {
+.leader-photo {
     width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border: 3px solid #ddd;
+    /* Размер фотографии */
+    height: auto;
+    /* Сохраняет пропорции */
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    /* Скругленные углы */
+    border: 3px solid #ddd;
+    /* Рамка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Тень */
+    margin-bottom: 1rem;
+    /* Отступ снизу для текста */
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.leader-info h3 {
+    font-size: 1.5rem;
+    /* Размер имени */
+    margin: 0;
+}
+
+.leader-info p {
+    font-size: 1rem;
+    /* Размер текста описания */
+    color: #666;
+    /* Цвет текста */
+    margin: 0.5rem 0 0;
+    /* Отступ сверху */
+}
+
+
+.contact-list {
+    margin-top: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.copyable {
+    cursor: pointer;
+    color: #2575fc;
+    text-decoration: underline;
+}
+
+.copyable:hover {
+    color: #6a11cb;
 }
 
 footer {
@@ -90,40 +132,4 @@ footer {
     padding: 1rem;
     background: #6a11cb;
     color: #fff;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
