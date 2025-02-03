@@ -133,3 +133,23 @@ footer {
     background: #6a11cb;
     color: #fff;
 }
+
+.copy-button {
+    background-color: #2575fc; /* Основной цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+    border: none; /* Убираем стандартные рамки */
+    padding: 8px 16px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 1rem; /* Размер шрифта */
+    cursor: pointer; /* Указатель в виде руки при наведении */
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход фона и эффекта нажатия */
+}
+
+.copy-button:hover {
+    background-color: #6a11cb; /* Изменение фона при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+
+.copy-button:active {
+    transform: scale(0.98); /* Эффект сжатия при нажатии */
+}
